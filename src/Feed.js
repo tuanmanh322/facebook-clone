@@ -12,6 +12,15 @@ function Feed() {
 
   useEffect(() => {
     console.log(db);
+    console.log(db);
+    console.log(db);
+    console.log(db);
+    console.log(db);
+    console.log(db);
+    console.log(db);
+    console.log(db);
+    console.log(db);
+    
     db.collection("posts").onSnapshot((snapshot) =>
       setPosts(snapshot.docs.map((doc) => ({ id: doc.id, data: doc.data() })))
     );
